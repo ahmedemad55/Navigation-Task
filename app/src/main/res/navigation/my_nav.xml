@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/fav_Fragment2">
+
+    <fragment
+        android:id="@+id/fav_Fragment2"
+        android:name="com.example.runproject.Fav_Fragment"
+        android:label="fragment_fav_"
+        tools:layout="@layout/fragment_fav_" >
+        <action
+            android:id="@+id/action_fav_Fragment2_to_music_Fragment2"
+            app:destination="@id/music_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/news_Fragment2"
+        android:name="com.example.runproject.News_Fragment"
+        android:label="fragment_news_"
+        tools:layout="@layout/fragment_news_" />
+    <fragment
+        android:id="@+id/music_Fragment2"
+        android:name="com.example.runproject.Music_Fragment"
+        android:label="fragment_music_"
+        tools:layout="@layout/fragment_music_" >
+        <action
+            android:id="@+id/action_music_Fragment2_to_places_Fragment2"
+            app:destination="@id/places_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/places_Fragment2"
+        android:name="com.example.runproject.Places_Fragment"
+        android:label="fragment_places_"
+        tools:layout="@layout/fragment_places_" >
+        <action
+            android:id="@+id/action_places_Fragment2_to_news_Fragment2"
+            app:destination="@id/news_Fragment2" />
+    </fragment>
+</navigation>
