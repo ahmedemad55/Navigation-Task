@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val appBar = AppBarConfiguration(setOf(R.id.fav_Fragment,R.id.music_Fragment,R.id.places_Fragment,R.id.news_Fragment))
         setupActionBarWithNavController(navcontroller,appBar)
 
-        bottomnavigation.setupWithNavController(navcontroller)
+        bottomnavigation.setupWithNavController(navcontroller  )
 
 
 
