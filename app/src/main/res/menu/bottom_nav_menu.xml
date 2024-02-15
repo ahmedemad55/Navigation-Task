@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/fav_Fragment"
+        android:id="@+id/fav_Fragment2"
         android:title="Favourite"
         android:icon="@drawable/favorite_icon" />
 
     <item
-        android:id="@+id/music_Fragment"
+        android:id="@+id/music_Fragment2"
         android:title="Music"
         android:icon="@drawable/music_icon"/>
 
     <item
-        android:id="@+id/places_Fragment"
+        android:id="@+id/places_Fragment2"
         android:title="Places"
         android:icon="@drawable/places_icon"/>
 
     <item
-        android:id="@+id/news_Fragment"
+        android:id="@+id/news_Fragment2"
         android:title="News"
         android:icon="@drawable/news_icon"/>
 </menu>
