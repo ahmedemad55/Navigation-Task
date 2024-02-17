@@ -18,5 +18,5 @@
     <item
         android:id="@+id/news_Fragment2"
         android:title="News"
-        android:icon="@drawable/news_icon"/>
+        android:icon="@drawable/news"/>
 </menu>

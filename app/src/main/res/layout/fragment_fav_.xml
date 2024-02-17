@@ -5,11 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".Fav_Fragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Favorite Fragment"
-        android:textSize="50sp"
-        android:gravity="center"/>
-
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/fav_fragment_rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 </FrameLayout>

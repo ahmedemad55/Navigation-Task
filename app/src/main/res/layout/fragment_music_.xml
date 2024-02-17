@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".Music_Fragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/music_fragment_rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Music Fragment"
-        android:textSize="50sp"
-        android:gravity="center"/>
+        android:layout_height="match_parent"/>
+
+
 
 </FrameLayout>
