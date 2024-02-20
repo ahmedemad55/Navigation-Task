@@ -6,14 +6,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.imageview.ShapeableImageView
 
 class adapter_fav (private val fav_list:ArrayList<item_data_class> ):
     RecyclerView.Adapter<adapter_fav.item_view_holder_fav>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): item_view_holder_fav {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view,parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view_fav,parent,false)
         return item_view_holder_fav(view)
 
     }
