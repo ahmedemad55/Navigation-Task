@@ -1,5 +1,6 @@
 package com.example.runproject
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -29,6 +30,8 @@ class Music_Fragment : Fragment() {
         recyclerview.setHasFixedSize(true)
 
         favlist = ArrayList()
+//        initRecyclerView()
+
 
 
         favlist.add(item_data_class(R.drawable.camel, "Camel", "The ship of the desert"))
@@ -59,8 +62,30 @@ class Music_Fragment : Fragment() {
         musicadapter = adapter_music(favlist)
         recyclerview.adapter = musicadapter
 
+
+
+
         return view
     }
+
+//    private fun initRecyclerView() {
+//        recyclerview.layoutManager = LinearLayoutManager(activity)
+//        val adapter = adapter_fav(favlist)
+//        recyclerview.adapter = adapter
+//        adapter.setOnClickListener(object :adapter_music.OnClickListener{
+//            override fun onClick(position: Int, model: item_data_class) {
+//                val intent = Intent(context, item_details::class.java)
+//                intent.putExtra("itemimage",model.data_class_image)
+//                intent.putExtra("itemname",model.data_class_name)
+//                intent.putExtra("itemdescription",model.data_class_description)
+//                startActivity(intent)
+//
+//
+//            }
+//        })
+//
+//    }
+
 
 
 }

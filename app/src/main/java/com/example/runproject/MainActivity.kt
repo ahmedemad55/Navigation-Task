@@ -2,6 +2,7 @@ package com.example.runproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.service.autofill.UserData
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -26,12 +27,9 @@ class MainActivity : AppCompatActivity() {
 
       // bottomnavigation.setupWithNavController(navcontroller  )
 
-
-
-
           navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
           bottomNavigationView = findViewById(R.id.navigation_view_id)
-        NavigationUI.setupWithNavController(bottomNavigationView, navHostFragment.navController)
+          NavigationUI.setupWithNavController(bottomNavigationView, navHostFragment.navController)
 
 
 
@@ -39,4 +37,9 @@ class MainActivity : AppCompatActivity() {
 
 
 
-}}
+
+
+}
+
+
+}

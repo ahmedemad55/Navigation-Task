@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 class adapter_news (private val fav_list:ArrayList<item_data_class> ):
     RecyclerView.Adapter<adapter_news.item_view_holder_news>() {
 
+    var onItemClick : ((item_data_class) -> Unit)? = null
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): item_view_holder_news {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.card_view_news,parent,false)
@@ -27,6 +30,10 @@ class adapter_news (private val fav_list:ArrayList<item_data_class> ):
         holder.holder_image.setImageResource(current_item.data_class_image)
         holder.holder_name.text = current_item.data_class_name
         holder.holder_description.text = current_item.data_class_description
+
+        holder.itemView.setOnClickListener {
+            onItemClick?.invoke(current_item)
+        }
 
     }
 
